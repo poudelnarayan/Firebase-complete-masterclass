@@ -57,7 +57,7 @@ class FakeAuthRepository implements AuthRepository {
   @override
   Future<void> signOut() async {
     _authState.value = null;
-  }
+  } 
 
   void dispose() => _authState.close();
 
